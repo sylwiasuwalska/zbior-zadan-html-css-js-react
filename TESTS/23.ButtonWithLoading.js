@@ -23,8 +23,8 @@ const ButtonWithLoading = (
 // przykładowy action do tego zadania
 const action = () => new Promise((resolve, reject)=>{
     const timer = setTimeout(()=>{
-        cleanTimeout(timer)
-        if(Math.round() > 0.5){
+        clearTimeout(timer)
+        if(Math.random() > 0.5){
             resolve('success')
         }
         else{
